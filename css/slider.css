@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 80vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 400ms;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    padding-left: 5%;
+    text-align: left;
+}
+header .overlay .barra{
+    height: 1%;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .overlay .titulo{
+    position: absolute;
+    left: 2%;
+    top: 40%;
+    height: 100%;
+    width: 100%;
+}
+header .overlay h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    font-weight: 350;
+    color: white;
+    transition: 1s;
+    user-select: none;
+}
+header .overlay .titulo button{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 90px;
+    height: 50px;
+    font-size: 0.7em;
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 600ms;
+    outline: none;
+    user-select: none;
+}
+header .overlay .titulo button:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+header .seta{
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    left: 0;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    z-index: 1;
+    font-size: 2em;
+    font-weight: 100;
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(64, 89, 92, 0.5);
+    cursor: pointer;
+    transition: 700ms;
+    user-select: none;
+}
+header .seta:hover{
+    background-color: rgba(64, 89, 92, 0.8);
+}
+header .direita{
+    left: 95%;
+}
+header .overlay .marcadores{
+    width: 40%;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    text-align: center;
+    user-select: none;
+}
+header .overlay .marcadores .marc{
+    display: inline-block;
+    border: 1px solid white;
+    height: 25%;
+    width: 10%;
+    cursor: pointer;
+}
+@media(max-width:772px){
+    header .seta{
+        display: none;
+    }
+    header .overlay .marcadores .marc{
+        height: 40%;
+    }
+}

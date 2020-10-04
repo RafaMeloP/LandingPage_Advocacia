@@ -1,0 +1,49 @@
+.endereco{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    background-color: rgb(218, 221, 226);
+    padding-top: 5%;
+}
+.endereco img{
+    position: absolute;
+    left: calc(100% - 40vw);
+    top: -12vh;
+    width: 35vw;
+    height: 55vh;
+}
+.endereco .texto{
+    width: 45%;
+    padding-left: 2%;
+    height: auto;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+.endereco .texto h2{
+    font-size: 2em;
+    margin-bottom: 10%;
+}
+.endereco .texto p{
+    font-size: 1.1em;
+    font-weight: 200;
+}
+@media(max-width:876px){
+    .endereco{
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .endereco img{
+        margin-bottom: 5%;
+        position: initial;
+        width: 60%;
+        height: 80%;
+        display: block;
+    }
+    .endereco .texto{
+        margin-bottom: 5%;
+    }
+}

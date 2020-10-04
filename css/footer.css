@@ -1,0 +1,64 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #001219;
+    text-align: center;
+    font-family: 'Dosis', Arial, sans-serif;
+    padding-top: 5%;
+    color: #C2C2C2;
+}
+footer h2{
+    font-weight: 300;
+}
+footer .media{
+    width: 40%;
+    height: auto;
+    padding: 3% 0;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.226);
+}
+footer .media li{
+    list-style: none;
+    display: inline-block;
+    width: 30%;
+}
+footer .media li img{
+    width: 25px;
+    height: 25px;
+}
+footer .contato{
+    display: flex;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer .contato .cont{
+    vertical-align: top;
+    margin-right: 4px;
+    width: 160px;
+    height: auto;
+    padding: 0 10px;
+    margin-bottom: 10%;
+}
+footer .contato .cont a{
+    color: rgb(236, 229, 162);
+    text-decoration: none;
+}
+footer .contato .cont a:hover{
+    color: rgb(206, 192, 68);
+}
+footer .contato .cont p{
+    display: inline-block;
+    font-size: 1em;
+    clear: both;
+}
+footer .contato .cont img{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 2%;
+}

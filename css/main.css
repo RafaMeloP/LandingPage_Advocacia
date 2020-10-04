@@ -1,0 +1,43 @@
+main{
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    background-color: rgb(0, 30, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+}
+main .item{
+    display: inline-block;
+    text-align: center;
+    margin-right: -4px;
+    width: 300px;
+    padding: 0 50px;
+    height: 300px;
+    color: #C79A5C;
+    margin-top: 5%;
+}
+main .item p{
+    font-size: 1.2em;
+}
+main .item h4{
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: rgb(172, 124, 58);
+}
+main .item img{
+    width: 70px;
+    height: 70px;
+}
+main > img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -25px;
+    z-index: 3;
+}
